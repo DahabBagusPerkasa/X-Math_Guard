@@ -1152,6 +1152,102 @@
         "name": "x math mini nembak 2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "asap.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asap.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "asap 8.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"asap 8.png\",\"extension\":\".png\"}",
+        "name": "asap 8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "asap 7.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"asap 7.png\",\"extension\":\".png\"}",
+        "name": "asap 7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "asap 6.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"asap 6.png\",\"extension\":\".png\"}",
+        "name": "asap 6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "asap 5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"asap 5.png\",\"extension\":\".png\"}",
+        "name": "asap 5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "asap 4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"asap 4.png\",\"extension\":\".png\"}",
+        "name": "asap 4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "asap 3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"asap 3.png\",\"extension\":\".png\"}",
+        "name": "asap 3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "asap 2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"asap 2.png\",\"extension\":\".png\"}",
+        "name": "asap 2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "asap 1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"asap 1.png\",\"extension\":\".png\"}",
+        "name": "asap 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/asap 1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "asap 1",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite8",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -6414,7 +6510,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.19561100536769277,
+        "zoomFactor": 0.20220707303601906,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -6532,6 +6628,95 @@
           "name": "Angle_Nembak",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Ganjil",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "1"
+            },
+            {
+              "type": "string",
+              "value": "3"
+            },
+            {
+              "type": "string",
+              "value": "5"
+            },
+            {
+              "type": "string",
+              "value": "7"
+            },
+            {
+              "type": "string",
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Genap",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "2"
+            },
+            {
+              "type": "string",
+              "value": "4"
+            },
+            {
+              "type": "string",
+              "value": "6"
+            },
+            {
+              "type": "string",
+              "value": "8"
+            },
+            {
+              "type": "string",
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "name": "NilaiGanjil",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "NIlai_Genap",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Maksimal",
+          "type": "number",
+          "value": 30
+        },
+        {
+          "name": "Spawn_Minimal_X",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Spawn_Maksimal_X",
+          "type": "number",
+          "value": 1270
+        },
+        {
+          "name": "Spawn_Minimal_Y",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Spawn_Maksimal_Y",
+          "type": "number",
+          "value": 718
         }
       ],
       "instances": [
@@ -6954,6 +7139,38 @@
           "x": 2873,
           "y": 2260,
           "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Spawner_Text_Genap",
+          "persistentUuid": "b0a78e5b-d95a-4bd4-a6a9-9383455887a1",
+          "width": 0,
+          "x": 182,
+          "y": -78,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Spawner_Text_Ganjil",
+          "persistentUuid": "447fb1c1-de31-4eb0-9b4b-0e389da865bc",
+          "width": 0,
+          "x": 267,
+          "y": -78,
+          "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8618,9 +8835,23 @@
           "name": "Monster_1",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "Mati_Hidup1",
+              "type": "boolean",
+              "value": true
+            }
+          ],
           "effects": [],
           "behaviors": [
+            {
+              "isFolded": true,
+              "name": "Flash",
+              "type": "Flash::Flash",
+              "HalfPeriodTime": 0.1,
+              "IsFlashing": false,
+              "FlashDuration": 0
+            },
             {
               "isFolded": true,
               "name": "Tween",
@@ -8646,10 +8877,10 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 62,
+                        "y": 70
                       },
                       "customCollisionMask": [
                         [
@@ -8711,10 +8942,10 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 62,
+                        "y": 70
                       },
                       "customCollisionMask": [
                         [
@@ -8763,10 +8994,10 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 62,
+                        "y": 70
                       },
                       "customCollisionMask": [
                         [
@@ -8860,9 +9091,23 @@
           "name": "Monster_2",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "Mati_Hidup2",
+              "type": "boolean",
+              "value": true
+            }
+          ],
           "effects": [],
           "behaviors": [
+            {
+              "isFolded": true,
+              "name": "Flash",
+              "type": "Flash::Flash",
+              "HalfPeriodTime": 0.1,
+              "IsFlashing": false,
+              "FlashDuration": 0
+            },
             {
               "isFolded": true,
               "name": "Tween",
@@ -9070,9 +9315,23 @@
           "name": "Monster_3",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "Mati_Hidup3",
+              "type": "boolean",
+              "value": true
+            }
+          ],
           "effects": [],
           "behaviors": [
+            {
+              "isFolded": true,
+              "name": "Flash",
+              "type": "Flash::Flash",
+              "HalfPeriodTime": 0.1,
+              "IsFlashing": false,
+              "FlashDuration": 0
+            },
             {
               "isFolded": true,
               "name": "Tween",
@@ -9346,7 +9605,7 @@
               "name": "Sticker",
               "type": "Sticker::Sticker",
               "OnlyFollowPosition": true,
-              "IsDestroyedWithParent": false
+              "IsDestroyedWithParent": true
             }
           ],
           "string": "",
@@ -9397,7 +9656,7 @@
               "name": "Sticker",
               "type": "Sticker::Sticker",
               "OnlyFollowPosition": true,
-              "IsDestroyedWithParent": false
+              "IsDestroyedWithParent": true
             }
           ],
           "string": "",
@@ -10313,7 +10572,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Tembakan",
           "type": "Sprite",
@@ -10348,20 +10607,499 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 10
+                            "x": 3.5,
+                            "y": 20.5
                           },
                           {
-                            "x": 50,
-                            "y": 10
+                            "x": 14,
+                            "y": 9.5
                           },
                           {
-                            "x": 50,
-                            "y": 32
+                            "x": 43,
+                            "y": 9
                           },
                           {
-                            "x": 6,
-                            "y": 32
+                            "x": 53.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 43,
+                            "y": 31.5
+                          },
+                          {
+                            "x": 14,
+                            "y": 31.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Asap",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "asap 1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "asap 1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 121.5,
+                        "y": 121.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 95,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 148
+                          },
+                          {
+                            "x": 95,
+                            "y": 148
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "asap 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 121.5,
+                        "y": 121.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 95,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 148
+                          },
+                          {
+                            "x": 95,
+                            "y": 148
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "asap 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 121.5,
+                        "y": 121.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 95,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 148
+                          },
+                          {
+                            "x": 95,
+                            "y": 148
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "asap 4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 121.5,
+                        "y": 121.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 95,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 148
+                          },
+                          {
+                            "x": 95,
+                            "y": 148
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "asap 5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 121.5,
+                        "y": 121.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 95,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 148
+                          },
+                          {
+                            "x": 95,
+                            "y": 148
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "asap 6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 121.5,
+                        "y": 121.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 95,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 148
+                          },
+                          {
+                            "x": 95,
+                            "y": 148
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "asap 7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 121.5,
+                        "y": 121.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 95,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 148
+                          },
+                          {
+                            "x": 95,
+                            "y": 148
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "asap 8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 121.5,
+                        "y": 121.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 95,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 148
+                          },
+                          {
+                            "x": 95,
+                            "y": 148
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "asap 1",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 121.5,
+                        "y": 121.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 95,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 99
+                          },
+                          {
+                            "x": 144,
+                            "y": 148
+                          },
+                          {
+                            "x": 95,
+                            "y": 148
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Spawner_Text_Genap",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite7",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Spawner_Text_Ganjil",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite8",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
                           }
                         ]
                       ]
@@ -10465,6 +11203,15 @@
           },
           {
             "objectName": "Timer"
+          },
+          {
+            "objectName": "Asap"
+          },
+          {
+            "objectName": "Spawner_Text_Genap"
+          },
+          {
+            "objectName": "Spawner_Text_Ganjil"
           }
         ]
       },
@@ -11903,8 +12650,8 @@
                   "parameters": [
                     "",
                     "Monster_1",
-                    "Spawner_Musuh1.X()",
-                    "Spawner_Musuh1.Y()",
+                    "RandomInRange(Spawn_Minimal_X,Spawn_Maksimal_X)",
+                    "RandomInRange(Spawn_Minimal_Y,Spawn_Maksimal_Y)",
                     ""
                   ]
                 },
@@ -11973,8 +12720,8 @@
                   "parameters": [
                     "",
                     "Monster_1",
-                    "Spawner_Musuh1.X()",
-                    "Spawner_Musuh1.Y()",
+                    "RandomInRange(Spawn_Minimal_X,Spawn_Maksimal_X)",
+                    "RandomInRange(Spawn_Minimal_Y,Spawn_Maksimal_Y)",
                     ""
                   ]
                 },
@@ -12043,8 +12790,8 @@
                   "parameters": [
                     "",
                     "Monster_1",
-                    "Spawner_Musuh1.X()",
-                    "Spawner_Musuh1.Y()",
+                    "RandomInRange(Spawn_Minimal_X,Spawn_Maksimal_X)",
+                    "RandomInRange(Spawn_Minimal_Y,Spawn_Maksimal_Y)",
                     ""
                   ]
                 },
@@ -12113,8 +12860,8 @@
                   "parameters": [
                     "",
                     "Monster_1",
-                    "Spawner_Musuh1.X()",
-                    "Spawner_Musuh1.Y()",
+                    "RandomInRange(Spawn_Minimal_X,Spawn_Maksimal_X)",
+                    "RandomInRange(Spawn_Minimal_Y,Spawn_Maksimal_Y)",
                     ""
                   ]
                 },
@@ -12183,8 +12930,8 @@
                   "parameters": [
                     "",
                     "Monster_1",
-                    "Spawner_Musuh1.X()",
-                    "Spawner_Musuh1.Y()",
+                    "RandomInRange(Spawn_Minimal_X,Spawn_Maksimal_X)",
+                    "RandomInRange(Spawn_Minimal_Y,Spawn_Maksimal_Y)",
                     ""
                   ]
                 },
@@ -12253,8 +13000,8 @@
                   "parameters": [
                     "",
                     "Monster_1",
-                    "Spawner_Musuh1.X()",
-                    "Spawner_Musuh1.Y()",
+                    "RandomInRange(Spawn_Minimal_X,Spawn_Maksimal_X)",
+                    "RandomInRange(Spawn_Minimal_Y,Spawn_Maksimal_Y)",
                     ""
                   ]
                 },
@@ -12347,6 +13094,17 @@
                     "True",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Monster_1",
+                    "Mati_Hidup1",
+                    "True",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -12375,7 +13133,125 @@
                     "value": "AddForceVers"
                   },
                   "parameters": [
-                    "Monster",
+                    "Monster_1",
+                    "Hero_2",
+                    "60",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Cek",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Monster_2",
+                    "Mati_Hidup2",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "x_hero",
+                    "=",
+                    "Hero_2.CenterX()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "y_hero",
+                    "=",
+                    "Hero_2.CenterY()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Monster_2",
+                    "Hero_2",
+                    "60",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Cek",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Monster_3",
+                    "Mati_Hidup3",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "x_hero",
+                    "=",
+                    "Hero_2.CenterX()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "y_hero",
+                    "=",
+                    "Hero_2.CenterY()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Monster_3",
                     "Hero_2",
                     "60",
                     ""
@@ -13336,20 +14212,8 @@
                       "parameters": [
                         "",
                         "Monster_1",
-                        "Spawner_Musuh1.X()",
-                        "Spawner_Musuh1.Y()",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Monster_1",
-                        "Spawner_Musuh4.X()",
-                        "Spawner_Musuh4.Y()",
+                        "RandomInRange(Spawn_Minimal_X,Spawn_Maksimal_X)",
+                        "RandomInRange(Spawn_Minimal_Y,Spawn_Maksimal_Y)",
                         ""
                       ]
                     },
@@ -13580,20 +14444,8 @@
                       "parameters": [
                         "",
                         "Monster_1",
-                        "Spawner_Musuh1.X()",
-                        "Spawner_Musuh1.Y()",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Monster_1",
-                        "Spawner_Musuh5.X()",
-                        "Spawner_Musuh5.Y()",
+                        "RandomInRange(Spawn_Minimal_X,Spawn_Maksimal_X)",
+                        "RandomInRange(Spawn_Minimal_Y,Spawn_Maksimal_Y)",
                         ""
                       ]
                     },
@@ -13763,20 +14615,8 @@
                       "parameters": [
                         "",
                         "Monster_1",
-                        "Spawner_Musuh1.X()",
-                        "Spawner_Musuh1.Y()",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Monster_1",
-                        "Spawner_Musuh4.X()",
-                        "Spawner_Musuh4.Y()",
+                        "RandomInRange(Spawn_Minimal_X,Spawn_Maksimal_X)",
+                        "RandomInRange(Spawn_Minimal_Y,Spawn_Maksimal_Y)",
                         ""
                       ]
                     },
@@ -13945,6 +14785,11 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
                 }
               ]
             },
@@ -15092,6 +15937,624 @@
                     "Animation",
                     "=",
                     "\"Nembak + Diem\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Event Ketembak",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Monster_1",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Tembakan",
+                    "Monster_1",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Monster_1",
+                    "Mati_Hidup1",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "Monster_1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Tembakan"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Asap",
+                    "Monster_1.CenterX()",
+                    "Monster_1.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "Monster_1",
+                    "Flash",
+                    "0.8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Monster_1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Asap",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Monster_2",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Tembakan",
+                    "Monster_2",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Monster_2",
+                    "Mati_Hidup2",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "Monster_2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Tembakan"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Asap",
+                    "Monster_2.CenterX()",
+                    "Monster_2.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "Monster_2",
+                    "Flash",
+                    "0.8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Monster_2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Asap",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Monster_3",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Tembakan",
+                    "Monster_3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Monster_3",
+                    "Mati_Hidup3",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "Monster_3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Tembakan"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Asap",
+                    "Monster_3.CenterX()",
+                    "Monster_3.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "Monster_3",
+                    "Flash",
+                    "0.8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Monster_3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Asap",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": true,
+          "folded": true,
+          "name": "Event Sticker",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Monster_1",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "NIlai_Genap",
+                        "+",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Angka_genap",
+                        "Monster_1.CenterX()",
+                        "Monster_1.CenterY()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Angka_genap",
+                        "Text",
+                        "=",
+                        "NIlai_Genap"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Ganjil_Genap",
+                            "=",
+                            "Ganjil_Genap[0]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Ganjil_Genap",
+                            "=",
+                            "Ganjil_Genap[2]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Angka_genap",
+                            "Text",
+                            "=",
+                            "Genap[0]"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Ganjil_Genap",
+                            "=",
+                            "Ganjil_Genap[4]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Angka_genap",
+                            "Text",
+                            "=",
+                            "Genap[0]"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Angka_ganjil",
+                        "Monster_1.CenterX()",
+                        "Monster_1.CenterY()",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Ganjil_Genap",
+                            "=",
+                            "Ganjil_Genap[1]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Angka_ganjil",
+                            "Text",
+                            "=",
+                            "Ganjil[0]"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Ganjil_Genap",
+                            "=",
+                            "Ganjil_Genap[3]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Angka_ganjil",
+                            "Text",
+                            "=",
+                            "Ganjil[0]"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Ganjil_Genap",
+                            "=",
+                            "Ganjil_Genap[5]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Angka_ganjil",
+                            "Text",
+                            "=",
+                            "Ganjil[0]"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
