@@ -1336,13 +1336,145 @@
         "name": "btn level sulit baru.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "BGM - Main Menu.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "BGM - Main Menu.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "UI - Start Button.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "UI - Start Button.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "UI - Back Button.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "UI - Back Button.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "UI - Start Button2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "UI - Start Button2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "UI - Button.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "UI - Button.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "New_Game",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "isFolded": true,
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "isFolded": true,
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "Scale": "Scale",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1.1,
+          "FadeInDuration": 0.1,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutBack",
+          "FadeOutEasing": "easeInOutBack",
+          "PreviousState": "Idle"
+        },
+        {
+          "isFolded": true,
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "New Game",
+      "font": "Minecraft.ttf",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 4,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "New Game",
+        "font": "Minecraft.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "New_Game"
+      }
+    ]
   },
   "objectsGroups": [],
   "variables": [
@@ -1355,6 +1487,22 @@
       "name": "Level_2",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "Sound2",
+      "type": "structure",
+      "children": [
+        {
+          "name": "BGM_Save",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Musik_Save",
+          "type": "number",
+          "value": 0
+        }
+      ]
     },
     {
       "folded": true,
@@ -1401,6 +1549,16 @@
       "name": "Level_2_Teken",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "BGM",
+      "type": "string",
+      "value": "50"
+    },
+    {
+      "name": "Musik",
+      "type": "number",
+      "value": 50
     }
   ],
   "layouts": [
@@ -1411,7 +1569,7 @@
       "name": "Home Scene",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -2828,7 +2986,8 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "ShowLabelAtChanges": false
+            "ShowLabelAtChanges": false,
+            "InitialValue": 50
           }
         },
         {
@@ -2841,82 +3000,6 @@
           "behaviors": [],
           "content": {
             "ShowLabelAtChanges": false
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "New_Game",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "isFolded": true,
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 2.0247e-320
-            },
-            {
-              "isFolded": true,
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "Scale": "Scale",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1.1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutBack",
-              "FadeOutEasing": "easeInOutBack",
-              "PreviousState": "Idle"
-            },
-            {
-              "isFolded": true,
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "string": "New Game",
-          "font": "Minecraft.ttf",
-          "textAlignment": "left",
-          "characterSize": 30,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": true,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "0;0;0",
-            "outlineThickness": 4,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "New Game",
-            "font": "Minecraft.ttf",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 30,
-            "lineHeight": 0,
-            "color": "255;255;255"
           }
         }
       ],
@@ -2967,9 +3050,6 @@
           },
           {
             "objectName": "Backsound"
-          },
-          {
-            "objectName": "New_Game"
           }
         ]
       },
@@ -2985,6 +3065,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3035,6 +3116,115 @@
                     "ButtonFSM",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "BGM - Main Menu.mp3",
+                    "1",
+                    "yes",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ReadStringFromStorage"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\"",
+                        "",
+                        "BGM"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "JSONToVariableStructure2"
+                      },
+                      "parameters": [
+                        "BGM",
+                        "Sound2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Sound",
+                        "=",
+                        "Sound2.Musik_Save",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Backsound",
+                        "=",
+                        "Sound2.BGM_Save",
+                        ""
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -3053,6 +3243,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Start Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetStringVariable"
@@ -3188,6 +3391,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "EnableLayerEffect"
                   },
                   "parameters": [
@@ -3258,6 +3474,26 @@
                 },
                 {
                   "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Cache"
                   },
                   "parameters": [
@@ -3297,6 +3533,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "EnableLayerEffect"
@@ -3369,6 +3618,26 @@
                 },
                 {
                   "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
@@ -3411,6 +3680,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Start Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetStringVariable"
@@ -3476,8 +3758,8 @@
                     "value": "EcrireFichierExp"
                   },
                   "parameters": [
-                    "\"Level\"",
-                    "\"2\"",
+                    "\"Value Lvl 1\"",
+                    "\"1\"",
                     "Level_1"
                   ]
                 },
@@ -3486,8 +3768,8 @@
                     "value": "EcrireFichierExp"
                   },
                   "parameters": [
-                    "\"Level\"",
-                    "\"3\"",
+                    "\"Value Lvl 2\"",
+                    "\"2\"",
                     "Level_2"
                   ]
                 },
@@ -3565,6 +3847,64 @@
                     "",
                     "\"Select Level\"",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "=",
+                    "Backsound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "=",
+                    "Sound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Sound2.BGM_Save",
+                    "=",
+                    "Backsound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Sound2.Musik_Save",
+                    "=",
+                    "Sound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"Settings\"",
+                    "\"Sound\"",
+                    "ToJSON(Sound2)"
                   ]
                 }
               ]
@@ -3759,7 +4099,7 @@
       "name": "Select Level",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -4978,6 +5318,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4995,8 +5336,8 @@
                     "value": "ReadNumberFromStorage"
                   },
                   "parameters": [
-                    "\"Level\"",
-                    "\"2\"",
+                    "\"Value Lvl 1\"",
+                    "\"1\"",
                     "",
                     "PenyimpananLvl1"
                   ]
@@ -5006,8 +5347,8 @@
                     "value": "ReadNumberFromStorage"
                   },
                   "parameters": [
-                    "\"Level\"",
-                    "\"3\"",
+                    "\"Value Lvl 2\"",
+                    "\"2\"",
                     "",
                     "PenyimpananLvl2"
                   ]
@@ -5074,6 +5415,26 @@
                 },
                 {
                   "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionTween2"
                   },
                   "parameters": [
@@ -5106,6 +5467,82 @@
                     "Pemisah",
                     "True",
                     ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ReadStringFromStorage"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\"",
+                        "",
+                        "BGM"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "JSONToVariableStructure2"
+                      },
+                      "parameters": [
+                        "BGM",
+                        "Sound2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Sound",
+                        "=",
+                        "Sound2.Musik_Save",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Backsound",
+                        "=",
+                        "Sound2.BGM_Save",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -5331,6 +5768,26 @@
                 },
                 {
                   "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
@@ -5464,6 +5921,26 @@
                   "parameters": [
                     "",
                     "\"Pengaturan\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
                   ]
                 },
                 {
@@ -5772,32 +6249,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "SetBooleanVariable"
-                      },
-                      "parameters": [
-                        "Level_2",
-                        "True",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "SetStringVariable"
                       },
                       "parameters": [
                         "Level_1_Teken",
                         "=",
                         "\"Lvl 1\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EcrireFichierExp"
-                      },
-                      "parameters": [
-                        "\"Level\"",
-                        "\"3\"",
-                        "Level_2"
                       ]
                     }
                   ],
@@ -6023,9 +6480,9 @@
                             "value": "NumberVariable"
                           },
                           "parameters": [
-                            "Mudah",
+                            "Sulit",
                             "=",
-                            "Mudah[0]"
+                            "Sulit[0]"
                           ]
                         }
                       ],
@@ -6050,9 +6507,9 @@
                             "value": "NumberVariable"
                           },
                           "parameters": [
-                            "Mudah",
+                            "Sulit",
                             "=",
-                            "Mudah[1]"
+                            "Sulit[1]"
                           ]
                         }
                       ],
@@ -6077,9 +6534,9 @@
                             "value": "NumberVariable"
                           },
                           "parameters": [
-                            "Mudah",
+                            "Sulit",
                             "=",
-                            "Mudah[2]"
+                            "Sulit[2]"
                           ]
                         }
                       ],
@@ -6104,9 +6561,9 @@
                             "value": "NumberVariable"
                           },
                           "parameters": [
-                            "Mudah",
+                            "Sulit",
                             "=",
-                            "Mudah[3]"
+                            "Sulit[3]"
                           ]
                         }
                       ],
@@ -6131,9 +6588,9 @@
                             "value": "NumberVariable"
                           },
                           "parameters": [
-                            "Mudah",
+                            "Sulit",
                             "=",
-                            "Mudah[4]"
+                            "Sulit[4]"
                           ]
                         }
                       ],
@@ -6158,9 +6615,9 @@
                             "value": "NumberVariable"
                           },
                           "parameters": [
-                            "Mudah",
+                            "Sulit",
                             "=",
-                            "Mudah[5]"
+                            "Sulit[5]"
                           ]
                         }
                       ],
@@ -6181,6 +6638,64 @@
                 }
               ],
               "parameters": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "=",
+                    "Backsound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "=",
+                    "Sound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Sound2.BGM_Save",
+                    "=",
+                    "Backsound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Sound2.Musik_Save",
+                    "=",
+                    "Sound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"Settings\"",
+                    "\"Sound\"",
+                    "ToJSON(Sound2)"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -6350,6 +6865,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         },
         {
           "name": "Tween",
@@ -8262,6 +8781,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         },
         {
           "name": "Tween",
@@ -25161,13 +25684,50 @@
                     "value": "EcrireFichierExp"
                   },
                   "parameters": [
-                    "\"Level\"",
-                    "\"2\"",
+                    "\"Value Lvl 1\"",
+                    "\"1\"",
                     "Level_1"
                   ]
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Level_1_Teken",
+                        "=",
+                        "\"Lvl 1\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "Level_2",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierExp"
+                      },
+                      "parameters": [
+                        "\"Value Lvl 2\"",
+                        "\"2\"",
+                        "Level_2"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "Monster_1",
@@ -25330,6 +25890,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Teken",
+                    "=",
+                    "\"Tidak ditekan\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -25354,6 +25924,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Teken",
+                    "=",
+                    "\"Tidak ditekan\""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionTween2"
@@ -25393,6 +25973,53 @@
                   "parameters": [
                     "",
                     "\"Mode Latihan\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Background_Loading",
+                    "Tween",
+                    "\"Turun\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Level_1_Teken",
+                    "=",
+                    "\"Lvl 1\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Level_1_Teken",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Select Level\"",
                     ""
                   ]
                 }
@@ -25767,6 +26394,10 @@
         {
           "name": "ButtonFSM",
           "type": "ButtonStates::ButtonFSM"
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween"
         },
         {
           "name": "Effect",
@@ -31552,6 +32183,51 @@
                     "value": "StringVariable"
                   },
                   "parameters": [
+                    "Level_2_Teken",
+                    "=",
+                    "\"Lvl 2\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Speed",
+                    "=",
+                    "75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Level_2_Teken",
+                    "=",
+                    "\"Tidak Diteken\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
                     "Teken",
                     "=",
                     "\"Diteken\""
@@ -42725,13 +43401,50 @@
                     "value": "EcrireFichierExp"
                   },
                   "parameters": [
-                    "\"Level\"",
-                    "\"2\"",
+                    "\"Value Lvl 1\"",
+                    "\"1\"",
                     "Level_1"
                   ]
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Level_1_Teken",
+                        "=",
+                        "\"Lvl 1\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "Level_2",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierExp"
+                      },
+                      "parameters": [
+                        "\"Value Lvl 2\"",
+                        "\"2\"",
+                        "Level_2"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "Monster_1",
@@ -42894,6 +43607,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Teken",
+                    "=",
+                    "\"Tidak ditekan\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -42918,6 +43641,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Teken",
+                    "=",
+                    "\"Tidak ditekan\""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionTween2"
@@ -42957,6 +43690,100 @@
                   "parameters": [
                     "",
                     "\"Mode Latihan\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Background_Loading",
+                    "Tween",
+                    "\"Turun\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Level_1_Teken",
+                    "=",
+                    "\"Lvl 1\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Level_1_Teken",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Select Level\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Background_Loading",
+                    "Tween",
+                    "\"Turun\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Level_2_Teken",
+                    "=",
+                    "\"Lvl 2\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Level_2_Teken",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Select Level\"",
                     ""
                   ]
                 }
@@ -43331,6 +44158,10 @@
         {
           "name": "ButtonFSM",
           "type": "ButtonStates::ButtonFSM"
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween"
         },
         {
           "name": "Effect",
@@ -49100,6 +49931,51 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Level_2_Teken",
+                    "=",
+                    "\"Lvl 2\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Speed",
+                    "=",
+                    "75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Level_2_Teken",
+                    "=",
+                    "\"Tidak Diteken\""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -60289,8 +61165,8 @@
                     "value": "EcrireFichierExp"
                   },
                   "parameters": [
-                    "\"Level\"",
-                    "\"2\"",
+                    "\"Value Lvl 1\"",
+                    "\"1\"",
                     "Level_1"
                   ]
                 }
@@ -60458,6 +61334,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Teken",
+                    "=",
+                    "\"Tidak ditekan\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -60482,6 +61368,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Teken",
+                    "=",
+                    "\"Tidak ditekan\""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionTween2"
@@ -60521,6 +61417,53 @@
                   "parameters": [
                     "",
                     "\"Mode Latihan\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Background_Loading",
+                    "Tween",
+                    "\"Turun\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Level_1_Teken",
+                    "=",
+                    "\"Lvl 1\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Level_1_Teken",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Select Level\"",
                     ""
                   ]
                 }
@@ -60895,6 +61838,10 @@
         {
           "name": "ButtonFSM",
           "type": "ButtonStates::ButtonFSM"
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween"
         },
         {
           "name": "Effect",
