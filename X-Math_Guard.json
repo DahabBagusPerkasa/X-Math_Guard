@@ -1386,6 +1386,76 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "BGM - Gameplay 1.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "BGM - Gameplay 1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Gameplay - Lightning.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Gameplay - Lightning.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Gameplay - Laser Gun.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Gameplay - Laser Gun.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Gameplay - Player Damage.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Gameplay - Player Damage.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Gameplay - Enemy Damage.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Gameplay - Enemy Damage.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Gameplay - Game Win Loop.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Gameplay - Game Win Loop.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "BGM - Gameplay 2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "BGM - Gameplay 2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1569,7 +1639,7 @@
       "name": "Home Scene",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": false,
+      "stopSoundsOnStartup": true,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -3258,6 +3328,15 @@
                 },
                 {
                   "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
@@ -3695,6 +3774,15 @@
                 },
                 {
                   "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
@@ -4099,7 +4187,7 @@
       "name": "Select Level",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": false,
+      "stopSoundsOnStartup": true,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -5468,6 +5556,19 @@
                     "True",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "BGM - Main Menu.mp3",
+                    "1",
+                    "yes",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
                 }
               ],
               "events": [
@@ -5641,6 +5742,28 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Start Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
@@ -5746,6 +5869,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "EnableLayerEffect"
@@ -5903,6 +6039,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "EnableLayerEffect"
@@ -6065,6 +6214,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -6247,6 +6409,19 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "UI - Back Button.wav",
+                        "2",
+                        "no",
+                        "Sound2.BGM_Save",
+                        "1"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "SetStringVariable"
@@ -6460,6 +6635,19 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "UI - Back Button.wav",
+                        "2",
+                        "no",
+                        "Sound2.BGM_Save",
+                        "1"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "SetStringVariable"
@@ -8007,6 +8195,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8104,6 +8293,115 @@
                     "ButtonFSM",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "BGM - Main Menu.mp3",
+                    "1",
+                    "yes",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ReadStringFromStorage"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\"",
+                        "",
+                        "BGM"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "JSONToVariableStructure2"
+                      },
+                      "parameters": [
+                        "BGM",
+                        "Sound2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Sound",
+                        "=",
+                        "Sound2.Musik_Save",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Backsound",
+                        "=",
+                        "Sound2.BGM_Save",
+                        ""
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -8122,6 +8420,28 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionTween2"
@@ -8231,6 +8551,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Start Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
@@ -8276,6 +8609,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Start Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetStringVariable"
@@ -8325,6 +8671,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Start Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
@@ -8370,6 +8729,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "EnableLayerEffect"
@@ -8462,6 +8834,26 @@
                 },
                 {
                   "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Cache"
                   },
                   "parameters": [
@@ -8485,6 +8877,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "EnableLayerEffect"
@@ -8577,6 +8982,26 @@
                 },
                 {
                   "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
@@ -8603,12 +9028,83 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
                     "",
                     "\"Home Scene\"",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "=",
+                    "Backsound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "=",
+                    "Sound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Sound2.BGM_Save",
+                    "=",
+                    "Backsound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Sound2.Musik_Save",
+                    "=",
+                    "Sound.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"Settings\"",
+                    "\"Sound\"",
+                    "ToJSON(Sound2)"
                   ]
                 }
               ]
@@ -9109,6 +9605,16 @@
           "name": "Speed",
           "type": "number",
           "value": 60
+        },
+        {
+          "name": "Pembeda_2",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Selesai",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -14486,6 +14992,48 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Gameplay - Lightning.wav",
+                "2",
+                "no",
+                "Sound2.BGM_Save",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
@@ -14731,9 +15279,123 @@
                     "ButtonFSM",
                     "no"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "HeroJoystick",
+                    "",
+                    ""
+                  ]
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ReadStringFromStorage"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\"",
+                        "",
+                        "BGM"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "JSONToVariableStructure2"
+                      },
+                      "parameters": [
+                        "BGM",
+                        "Sound2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Sound",
+                        "=",
+                        "Sound2.Musik_Save",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Backsound",
+                        "=",
+                        "Sound2.BGM_Save",
+                        ""
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -15187,6 +15849,26 @@
                 },
                 {
                   "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "HeroJoystick",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -15356,6 +16038,26 @@
                   },
                   "parameters": [
                     "Heroattack",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "HeroJoystick",
+                    "yes",
                     ""
                   ]
                 },
@@ -15671,9 +16373,38 @@
                     "=",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pembeda_2",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "BGM - Gameplay 1.mp3",
+                    "1",
+                    "yes",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -15692,6 +16423,16 @@
                     "Hero_2",
                     "TopDownMultitouchMapper",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Pembeda_2",
+                    "True",
+                    ""
                   ]
                 }
               ]
@@ -18512,6 +19253,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -18572,6 +19326,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -18623,6 +19390,19 @@
                     "Flash",
                     "0.8",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -18687,6 +19467,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -18738,6 +19531,19 @@
                     "Flash",
                     "0.8",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -18798,6 +19604,19 @@
                     "Flash",
                     "0.8",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -24028,6 +24847,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Laser Gun.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AddForceAL"
                   },
                   "parameters": [
@@ -24116,6 +24948,19 @@
                     "Hero_2.X()",
                     "Hero_2.Y()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Laser Gun.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -24730,6 +25575,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -24770,6 +25621,19 @@
                     "Monster_1.CenterX()",
                     "Monster_1.CenterY()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Enemy Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -24834,6 +25698,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -24874,6 +25744,19 @@
                     "Monster_2.CenterX()",
                     "Monster_2.CenterY()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Enemy Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -24938,6 +25821,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -25001,6 +25890,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Enemy Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -25056,6 +25958,39 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "yes",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetBooleanVariable"
@@ -25139,6 +26074,16 @@
                   },
                   "parameters": [
                     "Heroattack"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "",
+                    ""
                   ]
                 },
                 {
@@ -25264,6 +26209,39 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "EnableLayerEffect"
                   },
                   "parameters": [
@@ -25308,6 +26286,16 @@
                   },
                   "parameters": [
                     "Heroattack",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "yes",
                     ""
                   ]
                 },
@@ -25459,6 +26447,28 @@
               "actions": [
                 {
                   "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -25545,6 +26555,12 @@
                     "<=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -25642,11 +26658,61 @@
                 },
                 {
                   "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Btn_Settings"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Btn_Settings",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ShowLayer"
                   },
                   "parameters": [
                     "",
                     "\"Best Time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Game Win Loop.wav",
+                    "3",
+                    "yes",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -25890,6 +26956,28 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
@@ -25924,6 +27012,28 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetStringVariable"
@@ -26027,6 +27137,75 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "Backsound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "2",
+                "=",
+                "Sound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3",
+                "=",
+                "Backsound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Sound2.BGM_Save",
+                "=",
+                "Backsound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Sound2.Musik_Save",
+                "=",
+                "Sound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierTxt"
+              },
+              "parameters": [
+                "\"Settings\"",
+                "\"Sound\"",
+                "ToJSON(Sound2)"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -26762,6 +27941,11 @@
           "name": "Speed",
           "type": "number",
           "value": 60
+        },
+        {
+          "name": "Pembeda2",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -32158,6 +33342,48 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Gameplay - Lightning.wav",
+                "2",
+                "no",
+                "Sound2.BGM_Save",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
@@ -32448,9 +33674,123 @@
                     "ButtonFSM",
                     "no"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "HeroJoystick",
+                    "",
+                    ""
+                  ]
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ReadStringFromStorage"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\"",
+                        "",
+                        "BGM"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "JSONToVariableStructure2"
+                      },
+                      "parameters": [
+                        "BGM",
+                        "Sound2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Sound",
+                        "=",
+                        "Sound2.Musik_Save",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Backsound",
+                        "=",
+                        "Sound2.BGM_Save",
+                        ""
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -32904,6 +34244,26 @@
                 },
                 {
                   "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "HeroJoystick",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -33073,6 +34433,26 @@
                   },
                   "parameters": [
                     "Heroattack",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "HeroJoystick",
+                    "yes",
                     ""
                   ]
                 },
@@ -33388,9 +34768,38 @@
                     "=",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pembeda2",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "BGM - Gameplay 1.mp3",
+                    "1",
+                    "yes",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -33409,6 +34818,16 @@
                     "Hero_2",
                     "TopDownMultitouchMapper",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Pembeda2",
+                    "True",
+                    ""
                   ]
                 }
               ]
@@ -36229,6 +37648,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -36289,6 +37721,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -36340,6 +37785,19 @@
                     "Flash",
                     "0.8",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -36404,6 +37862,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -36455,6 +37926,19 @@
                     "Flash",
                     "0.8",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -36515,6 +37999,19 @@
                     "Flash",
                     "0.8",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -41745,6 +43242,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Laser Gun.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AddForceAL"
                   },
                   "parameters": [
@@ -41833,6 +43343,19 @@
                     "Hero_2.X()",
                     "Hero_2.Y()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Laser Gun.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -42447,6 +43970,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -42487,6 +44016,19 @@
                     "Monster_1.CenterX()",
                     "Monster_1.CenterY()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Enemy Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -42551,6 +44093,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -42591,6 +44139,19 @@
                     "Monster_2.CenterX()",
                     "Monster_2.CenterY()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Enemy Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -42655,6 +44216,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -42695,6 +44262,19 @@
                     "Monster_3.CenterX()",
                     "Monster_3.CenterY()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Enemy Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -42773,6 +44353,39 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "yes",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetBooleanVariable"
@@ -42856,6 +44469,16 @@
                   },
                   "parameters": [
                     "Heroattack"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "",
+                    ""
                   ]
                 },
                 {
@@ -42981,6 +44604,48 @@
               "actions": [
                 {
                   "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "EnableLayerEffect"
                   },
                   "parameters": [
@@ -43025,6 +44690,16 @@
                   },
                   "parameters": [
                     "Heroattack",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "yes",
                     ""
                   ]
                 },
@@ -43176,6 +44851,28 @@
               "actions": [
                 {
                   "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -43262,6 +44959,12 @@
                     "<=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -43359,11 +45062,61 @@
                 },
                 {
                   "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Btn_Settings"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Btn_Settings",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ShowLayer"
                   },
                   "parameters": [
                     "",
                     "\"Best Time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Game Win Loop.wav",
+                    "3",
+                    "yes",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -43607,6 +45360,28 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
@@ -43641,6 +45416,28 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetStringVariable"
@@ -43791,6 +45588,75 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "Backsound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "2",
+                "=",
+                "Sound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3",
+                "=",
+                "Backsound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Sound2.BGM_Save",
+                "=",
+                "Backsound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Sound2.Musik_Save",
+                "=",
+                "Sound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierTxt"
+              },
+              "parameters": [
+                "\"Settings\"",
+                "\"Sound\"",
+                "ToJSON(Sound2)"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -44526,6 +46392,11 @@
           "name": "Speed",
           "type": "number",
           "value": 60
+        },
+        {
+          "name": "Pembeda_2",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -49922,6 +51793,48 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Gameplay - Lightning.wav",
+                "2",
+                "no",
+                "Sound2.BGM_Save",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
@@ -50212,9 +52125,123 @@
                     "ButtonFSM",
                     "no"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "HeroJoystick",
+                    "",
+                    ""
+                  ]
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GroupExists"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ReadStringFromStorage"
+                      },
+                      "parameters": [
+                        "\"Settings\"",
+                        "\"Sound\"",
+                        "",
+                        "BGM"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "JSONToVariableStructure2"
+                      },
+                      "parameters": [
+                        "BGM",
+                        "Sound2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Sound",
+                        "=",
+                        "Sound2.Musik_Save",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                      },
+                      "parameters": [
+                        "Backsound",
+                        "=",
+                        "Sound2.BGM_Save",
+                        ""
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -50668,6 +52695,26 @@
                 },
                 {
                   "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "HeroJoystick",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -50837,6 +52884,26 @@
                   },
                   "parameters": [
                     "Heroattack",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "HeroJoystick",
+                    "yes",
                     ""
                   ]
                 },
@@ -51152,9 +53219,38 @@
                     "=",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pembeda_2",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "BGM - Gameplay 2.mp3",
+                    "1",
+                    "yes",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -51173,6 +53269,16 @@
                     "Hero_2",
                     "TopDownMultitouchMapper",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Pembeda_2",
+                    "True",
+                    ""
                   ]
                 }
               ]
@@ -53993,6 +56099,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -54053,6 +56172,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -54104,6 +56236,19 @@
                     "Flash",
                     "0.8",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -54168,6 +56313,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -54219,6 +56377,19 @@
                     "Flash",
                     "0.8",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -54279,6 +56450,19 @@
                     "Flash",
                     "0.8",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Player Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -59509,6 +61693,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Laser Gun.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AddForceAL"
                   },
                   "parameters": [
@@ -59597,6 +61794,19 @@
                     "Hero_2.X()",
                     "Hero_2.Y()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Laser Gun.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -60211,6 +62421,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -60251,6 +62467,19 @@
                     "Monster_1.CenterX()",
                     "Monster_1.CenterY()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Enemy Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -60315,6 +62544,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -60355,6 +62590,19 @@
                     "Monster_2.CenterX()",
                     "Monster_2.CenterY()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Enemy Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -60419,6 +62667,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -60459,6 +62713,19 @@
                     "Monster_3.CenterX()",
                     "Monster_3.CenterY()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Enemy Damage.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -60537,6 +62804,39 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "yes",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetBooleanVariable"
@@ -60620,6 +62920,16 @@
                   },
                   "parameters": [
                     "Heroattack"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "",
+                    ""
                   ]
                 },
                 {
@@ -60745,6 +63055,39 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Sound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+                  },
+                  "parameters": [
+                    "Backsound",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "EnableLayerEffect"
                   },
                   "parameters": [
@@ -60789,6 +63132,16 @@
                   },
                   "parameters": [
                     "Heroattack",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "yes",
                     ""
                   ]
                 },
@@ -60940,6 +63293,28 @@
               "actions": [
                 {
                   "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -61026,6 +63401,12 @@
                     "<=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -61123,11 +63504,43 @@
                 },
                 {
                   "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::ActivateControl"
+                  },
+                  "parameters": [
+                    "Heroattack",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ShowLayer"
                   },
                   "parameters": [
                     "",
                     "\"Best Time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Gameplay - Game Win Loop.wav",
+                    "3",
+                    "yes",
+                    "Sound2.BGM_Save",
+                    "1"
                   ]
                 },
                 {
@@ -61334,6 +63747,28 @@
               "actions": [
                 {
                   "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
@@ -61368,6 +63803,28 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "UI - Back Button.wav",
+                    "2",
+                    "no",
+                    "Sound2.BGM_Save",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetStringVariable"
@@ -61471,6 +63928,75 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "Backsound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "2",
+                "=",
+                "Sound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3",
+                "=",
+                "Backsound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Sound2.BGM_Save",
+                "=",
+                "Backsound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Sound2.Musik_Save",
+                "=",
+                "Sound.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierTxt"
+              },
+              "parameters": [
+                "\"Settings\"",
+                "\"Sound\"",
+                "ToJSON(Sound2)"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
