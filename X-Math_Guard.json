@@ -12,7 +12,7 @@
     "antialisingEnabledOnMobile": false,
     "folderProject": false,
     "orientation": "landscape",
-    "packageName": "com.example.gamename",
+    "packageName": "com.Solu.Benteng_Kode",
     "pixelsRounding": false,
     "projectUuid": "a7e9febf-d847-4669-9a75-33c30a07dd02",
     "scaleMode": "linear",
@@ -70,12 +70,12 @@
       "progressBarMaxWidth": 200,
       "progressBarMinWidth": 40,
       "progressBarWidthPercent": 30,
-      "showGDevelopSplash": true,
+      "showGDevelopSplash": false,
       "showProgressBar": true
     },
     "watermark": {
       "placement": "bottom-left",
-      "showWatermark": true
+      "showWatermark": false
     },
     "authorIds": [],
     "authorUsernames": [],
